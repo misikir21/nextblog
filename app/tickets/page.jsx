@@ -5,11 +5,14 @@ export default function Tickets() {
   return (
     <main>
       <nav>
-        <h2>Tickets</h2>
-        <p>
-          <small>Currently Avaliable tickets</small>
-        </p>
+        <div>
+          <h2>Tickets</h2>
+          <p>
+            <small>Currently Avaliable tickets</small>
+          </p>
+        </div>
       </nav>
+      <TicketsList />
     </main>
   );
 }
