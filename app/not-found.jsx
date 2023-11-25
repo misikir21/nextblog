@@ -5,7 +5,9 @@ export default function Notfound() {
     <main className="text-center">
       <h2 className="text-3xl">There was a problem</h2>
       <p>we could not fid the page you were looking for</p>
-      <Link href="/">Dashboard</Link>
+      <p>
+        Go bacc to dashboard<Link href="/">Dashboard</Link>
+      </p>
     </main>
   );
 }
