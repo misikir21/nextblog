@@ -7,8 +7,19 @@ export default function CreateForm() {
   const [body, setBody] = useState("");
   const [priority, setPriority] = useState("low");
   const [isLoading, setIsLoading] = useState(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    const ticket = {
+      title,
+      body,
+      priority,
+      user_email: "miskirteka@gmail.com",
+    };
+  };
+
   return (
-    <form onSubmit={handleSubmit} className="w-1/2">
+    <form className="w-1/2">
       <label>
         <span>Title:</span>
         <input
@@ -19,7 +30,7 @@ export default function CreateForm() {
         />
       </label>
       <label>
-        <span>Title:</span>
+        <span>Body:</span>
         <textarea
           required
           onChange={(e) => setBody(e.target.value)}
