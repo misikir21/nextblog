@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import React, { Suspense } from "react";
 import TicketsList from "./TicketsList";
 import Loading from "../Loading";
 
